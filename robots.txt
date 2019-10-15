@@ -1,0 +1,2 @@
+﻿User-agent: *
+Sitemap: https://7meb.itsinsta.site//sitemap.xml
