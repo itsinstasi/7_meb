@@ -270,7 +270,7 @@
 					<div class="items-item">
 						<a href="./posts/./garderobnye-na-zakaz.html" class="items-item__wrap">
 							<div class="items-item__pic">
-								<img class="js-now-lazy" src="https://scontent-arn2-2.cdninstagram.com/vp/3fc1ab4a6b0a28bf31834d8786415860/5E48BD81/t51.2885-15/e35/73457417_526111827956147_3143956652561066164_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" onerror="this.onerror=null; this.src='img/placeholder.png'" alt="Гардеробные на заказ">
+								<img class="" src="img/placeholder.png" data-src="https://scontent-arn2-2.cdninstagram.com/vp/3fc1ab4a6b0a28bf31834d8786415860/5E48BD81/t51.2885-15/e35/73457417_526111827956147_3143956652561066164_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" onerror="this.onerror=null; this.src='img/placeholder.png'" alt="Гардеробные на заказ">
 							</div>							
 							<div class="items-item__blind">
 								<div class="items-item__blind-wrap">
@@ -292,7 +292,7 @@
 					<div class="items-item">
 						<a href="./posts/./shkaf.html" class="items-item__wrap">
 							<div class="items-item__pic">
-								<img class="js-now-lazy" src="https://scontent-arn2-2.cdninstagram.com/vp/89ed32952de5258d4f8ffac6eda48464/5E4A427E/t51.2885-15/e35/71037621_395726824700920_1541384795461162919_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" onerror="this.onerror=null; this.src='img/placeholder.png'" alt="Шкаф">
+								<img class="" src="img/placeholder.png" data-src="https://scontent-arn2-2.cdninstagram.com/vp/89ed32952de5258d4f8ffac6eda48464/5E4A427E/t51.2885-15/e35/71037621_395726824700920_1541384795461162919_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=104" onerror="this.onerror=null; this.src='img/placeholder.png'" alt="Шкаф">
 							</div>							
 							<div class="items-item__blind">
 								<div class="items-item__blind-wrap">
@@ -314,7 +314,7 @@
 					<div class="items-item">
 						<a href="./posts/./shkaf-kupe.html" class="items-item__wrap">
 							<div class="items-item__pic">
-								<img class="js-now-lazy" src="https://scontent-arn2-2.cdninstagram.com/vp/3eeb532bc3798351b44bb0d1ffe91589/5E5E8580/t51.2885-15/e35/75151162_362042531201805_8586156869781606238_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" onerror="this.onerror=null; this.src='img/placeholder.png'" alt="Шкаф-купе">
+								<img class="" src="img/placeholder.png" data-src="https://scontent-arn2-2.cdninstagram.com/vp/3eeb532bc3798351b44bb0d1ffe91589/5E5E8580/t51.2885-15/e35/75151162_362042531201805_8586156869781606238_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" onerror="this.onerror=null; this.src='img/placeholder.png'" alt="Шкаф-купе">
 							</div>							
 							<div class="items-item__blind">
 								<div class="items-item__blind-wrap">
@@ -450,5 +450,17 @@
 	<script src="js/jquery.init.js"></script>
 	<!--my scripts-->
 	<script src="js/jquery.main.js"></script>
+
+
+	<script type="text/javascript">
+var listTail = `
+`;
+
+	$(document).ready(function() {
+		setTimeout(function() {
+			$(".items-main").append(listTail).find('img[data-src]').lazyLoadXT();
+		}, 12000);
+	});
+	</script>               
 </body>
 </html>

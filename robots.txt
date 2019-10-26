@@ -1,2 +1,4 @@
 ﻿User-agent: *
 Sitemap: https://7meb.itsinsta.site//sitemap.xml
+Disallow: /main.html
+Disallow: /main
